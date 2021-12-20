@@ -13,9 +13,10 @@ const db = knex({
     // connect to your own database here:
     client: 'pg',
     connectionString: process.env.DATABASE_URL,
-    ssl: {
-        rejectUnauthorized: false
-    }
+    // ssl: {
+    //     rejectUnauthorized: false
+    // }
+
 });
 
 const app = express();
